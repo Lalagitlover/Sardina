@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sardina</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+        }
+        body {
+
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .background-container {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.5;
+            z-index: -100;
+        }
+        .background-text{
+          font-size: 8vw;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .text_right {
+            animation: slide_right 30s linear infinite;
+        }
+
+        .text_left {
+            animation: slide_left 30s linear infinite;
+        }
+
+        .info_box{
+          display: flex;
+          padding: 3%;
+          border-radius: 5%;
+          justify-content:center;
+          flex-direction: column;
+          min-height: 50vh;
+          width: 50vw;
+          backdrop-filter: blur(10px);
+        }
+
+        .info_box h1{
+          font-size: 80px;
+          margin-bottom: 5%;
+        }
+
+        .info_box a{
+          text-align: center;
+          color: black;
+          background-color: white;
+          padding: 2%;
+          border-radius: 50px;
+          border: black solid 1px;
+          margin-top: 5%;
+        }
+
+        .info_box a:hover{
+          background-color: rgba(255, 255, 255, 0.13);
+          color: white;
+        }
+
+        .info_box_tg{
+          margin: 5%;
+        }
+
+        .info_box_tg h2{
+          margin-bottom: 5%;
+        }
+
+        .background-text img{
+          margin-right: 3%;
+          width: 200px;
+          height: 200px;
+          transform: scaleX(-1);
+        }
+
+        @media (max-width: 768px) {
+          .info_box h1{
+            text-align: center;
+            font-size: 50px;
+          }
+        }
+
+        
+        @keyframes slide_right {
+            from {
+                transform: translateX(-100vw);
+            }
+            to {
+                transform: translateX(100vw);
+            }
+        }
+        @keyframes slide_left {
+            from {
+                transform: translateX(100vw);
+            }
+            to {
+                transform: translateX(-100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-text text_right">ПИВО + САРДИНА = КРИПТОРАЙ ПИВО + САРДИНА = КРИПТОРАЙ ПИВО + САРДИНА = КРИПТОРАЙ ПИВО + САРДИНА = КРИПТОРАЙ ПИВО + САРДИНА = КРИПТОРАЙ ПИВО + САРДИНА = КРИПТОРАЙ</div>
+        <div class="background-text text_left"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"><img src="./img/fish.png" alt="fish"></div>
+        <div class="background-text text_right">Что может быть лучше холодного пивка после тяжёлого дня? Что может быть лучше холодного пивка после тяжёлого дня? Что может быть лучше холодного пивка после тяжёлого дня? </div>
+    </div>
+    <div class="info_box">
+      <h1>SARDINA COIN</h1>
+      <h4>🐟 SARDINA — ПИВО + САРДИНА = КРИПТОРАЙ 🐟 <br>
+        Что может быть лучше холодного пивка после тяжёлого дня? Только $SARDINA, который идёт под пивко так же идеально, как закуска к пенному! 🍺🐠</h4>
+        <div class="info_box_tg">
+          <h2>Наш канал</h2>
+          <a href="https://t.me/sardina_token">TELEGRAM</a>
+        </div>
+    </div>
+</body>
+</html>
