@@ -50,10 +50,10 @@
 
         .info_box{
           display: flex;
-          padding: 3%;
-          border-radius: 5%;
           justify-content:center;
           flex-direction: column;
+          padding: 3%;
+          border-radius: 5%;
           min-height: 50vh;
           width: 50vw;
           backdrop-filter: blur(10px);
@@ -67,28 +67,31 @@
         .info_box a{
           text-align: center;
           color: black;
-          background-color: white;
           padding: 2%;
           border-radius: 50px;
-          border: black solid 1px;
           margin-top: 5%;
+          opacity: 0.6;
         }
 
         .info_box a:hover{
-          background-color: rgba(255, 255, 255, 0.13);
-          color: white;
+          opacity: 1;
         }
 
-        .info_box_tg{
+        .info_box_messenger {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           margin: 5%;
         }
-
+        .info_box_messenger img{
+          width: 50px;
+          height: 50px;
+        }
         .info_box_tg h2{
           margin-bottom: 5%;
         }
 
         .background-text img{
-          margin-right: 3%;
           width: 200px;
           height: 200px;
           transform: scaleX(-1);
@@ -99,8 +102,10 @@
             text-align: center;
             font-size: 50px;
           }
+          .info_box_messenger img{
+            transform: scale(0.8);
+          }
         }
-
         
         @keyframes slide_right {
             from {
@@ -130,9 +135,11 @@
       <h1>SARDINA COIN</h1>
       <h4>🐟 SARDINA — ПИВО + САРДИНА = КРИПТОРАЙ 🐟 <br>
         Что может быть лучше холодного пивка после тяжёлого дня? Только $SARDINA, который идёт под пивко так же идеально, как закуска к пенному! 🍺🐠</h4>
-        <div class="info_box_tg">
-          <h2>Наш канал</h2>
-          <a href="https://t.me/sardina_token">TELEGRAM</a>
+        <div class="info_box_messenger">
+          <a href="https://t.me/sardina_token"><img src="./img/tga.png" alt="tg"></a>
+          <a href="https://t.me/sardina_token"><img src="./img/x.png" alt="x"></a>
+          <a href="https://t.me/sardina_token"><img src="./img/youtube.png" alt="youtube"></a>
+
         </div>
     </div>
 </body>
